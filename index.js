@@ -137,7 +137,7 @@ Google'da arama ipucu: "feet cm dönüştürme"
 
 function feetDonusturucu(santiMetre) {
   const birFoot = 30.48;
-  return (santiMetreantimetre / birFoot);
+  return (santiMetre / birFoot);
 }
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
@@ -155,11 +155,7 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 
 function cocukSarkisi(maymunSayisi) {
   for(let i = maymunSayisi; i > 0; i--) {
-      const metin1 = " küçük maymun yatakta zıplamış,";
-      const metin2 = " biri düşüp başını çarpmış,";
-      const metin3 = " Anne doktoru aramış,";
-      const metin4 = " Doktor çok kızmış: Bir daha yatakta zıplamak yok!";
-      console.log(i + metin1 + metin2 + metin3 + metin4);
+    console.log(`${i} küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!`);
   }
 }
 
