@@ -65,9 +65,10 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(dogumYili) {
-  const guncelYil = new Date().getFullYear()
-  return (guncelYil - dogumYili) * 7;
+function kopeginYasi(gelenDeger) {
+  //const guncelYil = new Date().getFullYear()
+  //return (guncelYil - dogumYili) * 7;
+  return gelenDeger * 7;
 }
 
 /* Görev 3 */
@@ -121,8 +122,8 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 */
 
 function milDonusturucu(kiloMetre) {
-  const birMil = 1.609344;
-  return (kiloMetre / birMil); 
+  const kmMil = 0.621371;
+  return (kiloMetre * kmMil); 
 }
 
 //Görev 4b - Santimetreden Feet
@@ -154,10 +155,14 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 */
 
 function cocukSarkisi(maymunSayisi) {
-  for(let i = maymunSayisi; i > 0; i--) {
-    console.log(`${i} küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!`);
-  }
+  let metin = "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!";
+  //console.log(`${maymunSayisi} ${metin}`);
+  return `${maymunSayisi} ${metin}`;
 }
+
+for(let i = 5; i >= 1; i--) {
+  cocukSarkisi(i);
+};
 
 /* Görev 6 : Not Hesaplayıcı */
 
